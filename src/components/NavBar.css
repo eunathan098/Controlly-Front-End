@@ -1,0 +1,76 @@
+.container-header-logo-left {
+    display: flex;
+    align-items: center;
+}
+
+.container-header-menu-right {
+    display: flex;
+    align-items: center;
+}
+
+#logo-menu {
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Menu lateral - oculto por padrão */
+.container-header-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Quando o menu estiver aberto (classe 'ativo') */
+.container-header-right.ativo {
+    width: 250px;
+}
+
+/* Cabeçalho do menu */
+.header-container-menu-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px;
+    padding-bottom: 20px;
+    height: 60px;
+}
+
+/* Ícone de fechar */
+#icon-menu-mobile {
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Lista de opções do menu */
+.menu-opcoes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-opcoes li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.585);
+}
+
+.menu-opcoes li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container-header-right.ativo {
+        width: 60%;
+    }
+}

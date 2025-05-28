@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container-form{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(220, 224, 225); */
+    background-color: #00D7FF;
+        background-image: url("../assets/fundo-pentagono.png");
+
+}
+
+.container-formulario{
+    display: flex;
+    padding: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.19);
+    background-image: url("../assets/fundo-pentagono.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.title-form{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+    text-shadow: red;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 10px;
+}
+
+input{
+    background-color: rgb(250, 250, 250);
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    font-family: "Nunito", sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    font-size: 18px;
+}
+
+button{
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: rgb(0, 86, 165);
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+}
+
+button:hover{
+    background-color: rgb(3, 98, 186);
+}
+
+/* Dispositivos Mobile */
+
+@media (min-width: 320px) and (max-width: 768px){
+    .container-formulario{
+        padding: 30px 30px 50px 30px;
+    }
+}
