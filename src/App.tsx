@@ -6,7 +6,7 @@ function App() {
   
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Controlly-Front-End/">
           <Routes>
             <Route path='/' element={<Login></Login>}></Route>
             <Route path='/login' element={<Login></Login>}></Route>
