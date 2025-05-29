@@ -15,57 +15,6 @@ function DashBoard(){
       <Header></Header>
         <div className="container-content-dashboard">
           <div className="container-dashboard">
-          <div className="container-filters">
-
-            <div className="container-name-select">
-              <p className="title-name-filter"> Produto: </p>
-              <select name="" id="" className="select-filter">
-                <option value=""> Todos </option>
-                <option value=""> Recentes </option>
-                <option value=""> Antigos </option>
-                <option value=""> Todos </option>
-              </select>
-            </div>
-            
-
-            <div className="container-name-select">
-              <p className="title-name-filter"> Grupo: </p>
-              <select name="" id="" className="select-filter">
-                <option value=""> Todos </option>
-                <option value=""> Recentes </option>
-                <option value=""> Antigos </option>
-                <option value=""> Todos </option>
-              </select>
-            </div>
-
-            <div className="container-name-select">
-              <p className="title-name-filter"> Mês: </p>
-              <select name="" id="" className="select-filter">
-                <option value=""> Todos </option>
-                <option value=""> Janeiro </option>
-                <option value=""> Fevereiro </option>
-                <option value=""> Março </option>
-                <option value=""> Abril </option>
-                <option value=""> Maio </option>
-                <option value=""> Junho </option>
-                <option value=""> Julho </option>
-                <option value=""> Agosto </option>
-                <option value=""> Setembro </option>
-                <option value=""> Outubro </option>
-                <option value=""> Novembro </option>
-                <option value=""> Dezembro </option>
-              </select>
-            </div>
-
-            <div className="container-name-select">
-              <p className="title-name-filter"> Entrada/Saída: </p>
-              <select name="" id="" className="select-filter">
-                <option value=""> Entrada </option>
-                <option value=""> Saída </option>
-              </select>
-            </div>
-
-          </div>
 
             <div className="container-info-numbers">
 

@@ -1,0 +1,112 @@
+.container-content-estoque {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.estoque-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    font-family: "Nunito", sans-serif;
+}
+
+.container-estoque-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+/* Filtros */
+.container-filters {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.container-name-select {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-name-filter {
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 5px;
+}
+
+.select-filter {
+    padding: 5px 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+}
+
+/* Tabela */
+.tabela-estoque {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Nunito", sans-serif;
+}
+
+
+.tabela-estoque th,
+.tabela-estoque td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.tabela-estoque th {
+    background-color: rgb(0, 204, 255);
+    font-weight: bold;
+    color: #333;
+}
+
+.tabela-estoque tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabela-estoque tr:hover {
+    background-color: rgb(106, 223, 252);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-estoque-itens {
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    .container-filters {
+        flex-direction: row;
+        align-items: flex-start;
+        overflow-x: auto;
+    }
+
+    .tabela-estoque th,
+    .tabela-estoque td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .estoque-title {
+        font-size: 20px;
+    }
+}
