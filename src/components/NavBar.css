@@ -68,7 +68,13 @@
     background-color: #f0f0f0;
 }
 
-/* Responsivo */
+.navbar-navigation{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.72);
+    font-family: "Nunito", sans-serif;
+}
+
+/* Resolução em dispositivos Mobile */
 @media (max-width: 768px) {
     .container-header-right.ativo {
         width: 60%;

@@ -1,0 +1,137 @@
+.container-content-dashboard{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-dashboard{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 70%;
+    flex-direction: column;
+    background-color: rgb(237, 236, 236);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.042);
+}
+
+.container-filters{
+    display: flex;
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.title-name-filter{
+    color: rgba(0, 0, 0, 0.68);
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 5px;
+}
+
+.select-filter{
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.313);
+    outline: none;
+    background-color: #fff;
+}
+
+.container-info-numbers{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    gap: 20px;
+}
+
+.container-resumes{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.219);
+    transition: 0.5s ease-in-out;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.title{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.total{
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.graficoItens{
+    width: 100%;
+    height: 100%;
+}
+
+/* segundo container */
+.container-info-grafics{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    gap: 20px;
+}
+
+/* gráficos */
+.container-resumes-grafics{
+    width: 50%;
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.265); 
+    transition: 0.5s ease-in-out; 
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Resolução para dispositivos Mobile  */
+@media (min-width: 320px) and (max-width: 768px){
+    .container-filters{
+        overflow-x: auto;
+        padding-left: 0;
+    }
+
+    .title{
+        font-size: 15px;
+    }
+
+    .total{
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .container-resumes{
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.219);
+        transition: 0.5s ease-in-out;
+    }
+}

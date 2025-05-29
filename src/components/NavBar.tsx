@@ -3,6 +3,7 @@ import "./NavBar.css";
 
 import LogoControlly from "../assets/controlly-logotipo.jpeg";
 import LogoMenu from "../assets/menu.png";
+import { Link } from "react-router-dom";
 
 function NavBar() {
     const [menuAberto, setMenuAberto] = useState(false);
@@ -40,10 +41,18 @@ function NavBar() {
                 </div>
 
                 <ul className="menu-opcoes">
-                    <li>DashBoard</li>
-                    <li>Cadastros</li>
-                    <li>Estoque</li>
-                    <li>Resumos</li>
+                    <li >
+                        <Link to="/dashboard" className="navbar-navigation">Dashboard</Link>
+                    </li>
+                    <li>
+                        <Link to="/itens" className="navbar-navigation">Itens</Link>
+                    </li>
+                    <li>
+                        <Link to="/estoque" className="navbar-navigation">Estoque</Link>
+                    </li>
+                    <li>
+                        <Link to="/resumos" className="navbar-navigation">Resumos</Link>
+                    </li>
                 </ul>
             </div>
         </>
