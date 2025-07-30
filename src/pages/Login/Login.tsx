@@ -11,7 +11,7 @@ export default function Login() {
   function acessSistem(e: React.FormEvent) {
     e.preventDefault();
 
-    if (email === "senha@gmail.com" && senha === "senha") {
+    if (email === "nathan@gmail.com" && senha === "senha") {
       navigate("/dashboard");
     } else {
       alert("E-mail ou senha inválidos");
