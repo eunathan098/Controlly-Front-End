@@ -47,8 +47,8 @@ export default function Estoque() {
               <select className="select-filter">
                 <option value="">Todos</option>
                 <option value="bebidas">Bebidas</option>
-                <option value="limpeza">Limpeza</option>
-                <option value="snacks">Snacks</option>
+                <option value="limpeza">Doces</option>
+                <option value="snacks">Salgados</option>
               </select>
             </div>
 

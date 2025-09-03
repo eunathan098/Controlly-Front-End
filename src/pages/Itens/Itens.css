@@ -21,7 +21,7 @@ html, body{
 
 .container-header-itens{
     display: flex;
-    padding-right: 30px;
+    padding: 10px 30px 10px 30px;
     text-align: right;
     align-items: center;
     justify-content: right;
@@ -29,8 +29,7 @@ html, body{
     height: 10%;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.19);
 }
-
-.container-itens{
+#container-itens{
     display: flex;
     text-align: center;
     align-items: center;
@@ -52,24 +51,63 @@ html, body{
 /* Formulário de itens flutuante */
 .container-form-itens{
     display: flex;
-    position: absolute;
-    text-align: center;
-    align-items: center;
     justify-content: center;
-    background-color: red;
+
     height: 100vh;
     width: 100%;
 }
 
 .form-itens{
     display: flex;
+    text-align: center;
+    align-items: center;
     padding: 20px;
     text-align: center;
-    background-color: yellow;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
 .header-form-itens-title{
-    background-color: blue;
     margin: 30px;
+    font-size: 24px;
+}
+
+#form-itens{
+    display: flex;
+    padding: 30px;
+    gap: 10px;
+    text-align: left;
+    background-color: rgba(238, 185, 185, 0.249);
+    flex-direction: column;
+    width: 50%;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+#btn-add-product{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    border: none;
+}
+
+#btn-add-product:hover{
+    color: white;
+    background-color: rgb(3, 162, 3);
+}
+
+/* Responsividade para Mobile */
+@media (min-width: 320px) and (max-width: 769px){
+    #form-itens{
+        width: 100%;
+        font-size: 18px;
+    }
 }

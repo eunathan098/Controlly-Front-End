@@ -15,7 +15,7 @@ function NavBar() {
     return (
         <>
             <div className="container-header-logo-left">
-                <img src={LogoControlly} alt="Logo" height="40px" />
+                <img src={LogoControlly} alt="Logo" height="40px" id="logo-controlly"/>
             </div>
 
             <div className="container-header-menu-right">
@@ -52,6 +52,10 @@ function NavBar() {
                     </li>
                     <li>
                         <Link to="/resumos" className="navbar-navigation">Resumos</Link>
+                    </li>
+
+                    <li>
+                        <Link to="/login" className="navbar-navigation">Sair</Link>
                     </li>
                 </ul>
             </div>

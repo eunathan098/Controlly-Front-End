@@ -13,6 +13,10 @@
     cursor: pointer;
 }
 
+#logo-controlly{
+    cursor: pointer;
+}
+
 /* Menu lateral - oculto por padrão */
 .container-header-right {
     position: absolute;
