@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Resumos from "./pages/Resumos/Resumos";
 
 function App() {
-  
   return (
     <>
       <BrowserRouter basename="/Controlly-Front-End/">

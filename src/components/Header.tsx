@@ -3,7 +3,6 @@ import "./Header.css"
 import NavBar from "./NavBar";
 
 function Header(){
-
     return(
         <>
             <div className="container-header">
@@ -12,5 +11,4 @@ function Header(){
         </>
     )
 }
-
 export default Header;

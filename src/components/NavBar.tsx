@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./NavBar.css";
-
 import LogoControlly from "../assets/controlly-logotipo.jpeg";
 import LogoMenu from "../assets/menu.png";
 import { Link } from "react-router-dom";

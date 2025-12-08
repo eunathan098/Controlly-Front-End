@@ -4,10 +4,8 @@ import Header from '../../../src/components/Header'
 import GraficoItens1 from "../../assets/grafico-itens.png"
 import GraficoItens2 from "../../assets/grafico-itens-2.png"
 
-
 // Importação do CSS
 import "./Dashboard.css";
-
 
 function DashBoard(){
   return(

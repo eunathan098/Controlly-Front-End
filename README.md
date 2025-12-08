@@ -61,5 +61,5 @@ npm run dev
 Comando para biuldar o código do projeto (Converter de TS para JS):
 npm run build
 
-Comando para realizar o deploy do projeto em produção:
+Comando para realizar o deploy (subir) do projeto em produção:
 npm run deploy

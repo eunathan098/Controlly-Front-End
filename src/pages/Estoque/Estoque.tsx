@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import "./Estoque.css";
-
 interface ItemEstoque {
   id: number;
   nome: string;
