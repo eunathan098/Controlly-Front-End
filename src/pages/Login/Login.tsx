@@ -8,14 +8,34 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
-  function acessSistem(e: React.FormEvent) {
+  const API_URL = import.meta.env.VITE_API_URL || "https://controlly-back-end.onrender.com";
+
+  async function acessSistem(e: React.FormEvent) {
     e.preventDefault();
 
-    if (email === "nathan@gmail.com" && senha === "senha") {
-      navigate("/dashboard");
-    } else {
-      alert("E-mail ou senha inválidos");
+    try {
+      const response = await fetch(`${API_URL}/login`,{
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password: senha})
+      });
+
+      const data = await response.json();
+
+     if (response.ok) {
+        // Login bem-sucedido
+        // Aqui você pode salvar o token JWT, se estiver usando
+        localStorage.setItem("token", (data.data.token))
+        localStorage.setItem("user", JSON.stringify(data.data.user));
+        navigate("/dashboard");
+      } else {
+        alert(data.message || "E-mail ou senha inválidos");
+      }
+    } catch (error) {
+      console.error("Erro ao fazer login:", error);
+      alert("Erro na conexão com o servidor");
     }
+ 
   }
 
   return (
