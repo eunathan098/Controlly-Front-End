@@ -5,25 +5,37 @@ import botaoAdicionar from "../../assets/icons/adicionar.png";
 
 interface Product {
   name: string;
+  description: string;
+  grupo: string;
   quantity: number;
   price: number;
 }
 
 function Itens() {
   const [products, setProducts] = useState<Product[]>([]);
-  const [name, setName] = useState("");
+  const [name, setName] = useState("")
+  const [description, setDescription] = useState("");
+  const [grupo, setGrupo] = useState("")
   const [quantity, setQuantity] = useState(0);
   const [price, setPrice] = useState(0);
+  const totalProducts = quantity * price
 
   function addProduct(e: React.FormEvent) {
     e.preventDefault();
 
-    if (!name || !quantity || !price) {
-      alert("Por favor. Ainda há campos vazios");
-      return;
+    if (!name || description || !grupo || !quantity || !price) {
+        alert("Preencha os campos vazios");
+        return;
     }
 
-    const newProduct: Product = { name, quantity, price };
+    // const productData = {
+    //   name,
+    //   description,
+    //   price,
+    //   quantity
+    // }
+
+    const newProduct: Product = { name, description, grupo, quantity, price };
     setProducts([...products, newProduct]);
 
     // Limpa os campos
@@ -57,37 +69,56 @@ function Itens() {
 
             <form id="form-itens" onSubmit={addProduct}>
               <label>
-                <span>Nome:</span>
-                <input
-                  type="text"
+                <span> Nome: </span>
+                  <input type="text"
                   placeholder="Nome do produto"
                   value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
+                  onChange={(e) => setName(e.target.value)}/>
+              </label>
+
+              <label>
+                <span> Descrição: </span>
+                <input type="text"
+                placeholder="Descrição do produto"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)} />
+              </label>
+
+              <label>
+                <span> Grupo: </span>
+                  <select value={grupo} onChange={(e)=> setGrupo(e.target.value)}>
+                    <option value=""> Selecione: </option>
+                    <option value="Bebidas"> Bebidas </option>
+                    <option value="Doces"> Doces </option>
+                    <option value="Salgados"> Salgados</option>
+                  </select>
               </label>
 
               <label>
                 <span>Quantidade:</span>
-                <input
-                  type="number"
-                  placeholder="Quantidade"
-                  value={quantity}
-                  onChange={(e) => setQuantity(Number(e.target.value))}
-                />
+                  <input
+                    type="number"
+                    placeholder="Quantidade"
+                    value={quantity}
+                    onChange={(e) => setQuantity(Number(e.target.value))}
+                  />
               </label>
 
               <label>
-                <span>Preço:</span>
-                <input
-                  type="number"
-                  placeholder="Preço"
-                  value={price}
-                  onChange={(e) => setPrice(Number(e.target.value))}
-                />
+                <span>Preço Unitário:</span>
+                  <input
+                    type="number"
+                    placeholder="Preço"
+                    value={price}
+                    onChange={(e) => setPrice(Number(e.target.value))}
+                  />
               </label>
-
               <input type="submit" value="Adicionar produto" id="btn-add-product" />
             </form>
+            <p>
+              <strong>Total:</strong>
+              R$ {totalProducts.toFixed(2)}
+            </p>
           </div>
         </div>
 

@@ -96,11 +96,8 @@ input{
     transition: 0.3s ease-in-out;
     font-weight: bold;
     border: none;
-}
-
-#btn-add-product:hover{
     color: white;
-    background-color: rgb(3, 162, 3);
+    background-color: rgba(3, 167, 3, 0.722);
 }
 
 /* Responsividade para Mobile */
